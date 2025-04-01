@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Đăng Nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="login-container">
+    <h2>Đăng Nhập</h2>
+    @using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <input type="text" name="username" placeholder="Tên Truy Cập" required />
+        <input type="password" name="password" placeholder="Mật Khẩu" required />
+        <button type="submit">Đăng Nhập</button>
+
+        if (ViewBag.Error != null)
+        {
+            <p class="error">@ViewBag.Error</p>
+        }
+
+        if (TempData["Success"] != null)
+        {
+            <p class="success">@TempData["Success"]</p>
+        }
+
+        <div class="links">
+            <a href="@Url.Action("ResetPassword", "Auth")">Quên Mật Khẩu?</a><br />
+            <a href="@Url.Action("Register", "Auth")">Tạo Tài Khoản</a>
+        </div>
+    }
+</div>
+
+<style>
+    .login-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .login-container button:hover {
+                background-color: #b71c1c;
+            }
+
+        .login-container .error {
+            color: red;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .login-container .success {
+            color: green;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .login-container .links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+            .login-container .links a {
+                color: #1976d2;
+                text-decoration: none;
+            }
+
+                .login-container .links a:hover {
+                    text-decoration: underline;
+                }
+</style>
