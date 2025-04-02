@@ -4,27 +4,38 @@
 }
 
 <div class="login-container">
-    <h2>Đăng Nhập</h2>
-    @using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+    @if (Session["Username"] == null) // Nếu người dùng chưa đăng nhập
     {
-        @Html.AntiForgeryToken()
-        <input type="text" name="username" placeholder="Tên Truy Cập" required />
-        <input type="password" name="password" placeholder="Mật Khẩu" required />
-        <button type="submit">Đăng Nhập</button>
-
-        if (ViewBag.Error != null)
+        <h2>Đăng Nhập</h2>
+        using (Html.BeginForm("Login", "Auth", FormMethod.Post))
         {
-            <p class="error">@ViewBag.Error</p>
-        }
+            @Html.AntiForgeryToken()
+            <input type="text" name="username" placeholder="Tên Truy Cập" required />
+            <input type="password" name="password" placeholder="Mật Khẩu" required />
+            <button type="submit">Đăng Nhập</button>
 
-        if (TempData["Success"] != null)
-        {
-            <p class="success">@TempData["Success"]</p>
-        }
+            if (ViewBag.Error != null)
+            {
+                <p class="error">@ViewBag.Error</p>
+            }
 
-        <div class="links">
-            <a href="@Url.Action("ResetPassword", "Auth")">Quên Mật Khẩu?</a><br />
-            <a href="@Url.Action("Register", "Auth")">Tạo Tài Khoản</a>
+            if (TempData["Success"] != null)
+            {
+                <p class="success">@TempData["Success"]</p>
+            }
+
+            <div class="links">
+                <a href="@Url.Action("ResetPassword", "Auth")">Quên Mật Khẩu?</a><br />
+                <a href="@Url.Action("Register", "Auth")">Tạo Tài Khoản</a>
+            </div>
+        }
+    }
+    else // Nếu người dùng đã đăng nhập
+    {
+        <div class="user-info">
+            <i class="fas fa-user-circle user-icon"></i>
+            <h3>@Session["Username"]</h3>
+            <a href="@Url.Action("Logout", "Auth")" class="logout-button">Đăng Xuất</a>
         </div>
     }
 </div>
@@ -94,4 +105,39 @@
                 .login-container .links a:hover {
                     text-decoration: underline;
                 }
+
+    /* CSS cho phần hiển thị thông tin người dùng đã đăng nhập */
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-icon {
+        font-size: 160px; /* Kích thước biểu tượng người dùng */
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .user-info h3 {
+        margin: 10px 0;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .logout-button {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        background-color: #d32f2f;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+        .logout-button:hover {
+            background-color: #b71c1c;
+        }
 </style>

@@ -12,15 +12,23 @@
         /* Đảm bảo body có màu trắng */
         body {
             background-color: #fff;
+            margin: 0; /* Đảm bảo không có margin mặc định */
         }
 
         /* CSS cho navbar */
         .navbar {
             background-color: #fff !important; /* Màu nền trắng */
+            margin-bottom: 0 !important; /* Loại bỏ khoảng trống bên dưới */
+            padding-bottom: 0 !important; /* Loại bỏ padding bên dưới */
         }
 
+            .navbar .container {
+                padding-top: 0; /* Loại bỏ padding trên cùng của container */
+                padding-bottom: 0; /* Loại bỏ padding dưới cùng của container */
+            }
+
         .navbar-brand img {
-            height: 40px; /* Điều chỉnh kích thước logo */
+            height: 50px; /* Tăng kích thước logo lên 50px */
         }
 
         /* Điều chỉnh màu chữ và biểu tượng trong navbar để tương phản với nền trắng */
@@ -28,35 +36,66 @@
             color: #333 !important; /* Chữ đen để tương phản với nền trắng */
         }
 
-        .navbar .nav-link:hover {
-            color: #000 !important; /* Đậm hơn khi hover */
-        }
+            .navbar .nav-link:hover {
+                color: #000 !important; /* Đậm hơn khi hover */
+            }
 
         .search-bar {
             display: flex;
             align-items: center;
             margin-right: 15px;
+            position: relative; /* Để định vị biểu tượng tìm kiếm */
         }
 
             .search-bar input {
-                border: 1px solid #fff; /* Viền màu trắng */
+                border: 1px solid #ccc; /* Viền màu xám nhạt */
                 border-radius: 20px;
-                padding: 5px 10px;
+                padding: 5px 30px 5px 30px; /* Padding để chừa chỗ cho biểu tượng */
                 width: 200px;
                 background-color: #f5f5f5; /* Nền ô tìm kiếm nhạt để nổi bật */
                 color: #333;
             }
 
-            .search-bar input::placeholder {
-                color: #666; /* Màu placeholder */
-            }
+                .search-bar input::placeholder {
+                    color: #666; /* Màu placeholder */
+                }
 
             .search-bar .fa-search {
-                margin-left: -30px;
-                color: #333; /* Biểu tượng tìm kiếm màu đen để tương phản */
+                position: absolute;
+                left: 10px; /* Đặt biểu tượng tìm kiếm bên trái ô input */
+                top: 50%;
+                transform: translateY(-50%);
+                color: #ff0000; /* Màu đỏ cho biểu tượng tìm kiếm */
             }
 
-        .navbar-icons .fas {
+            .search-bar button {
+                border: 1px solid #ccc; /* Viền cho nút */
+                border-radius: 20px;
+                padding: 5px 10px;
+                margin-left: 10px; /* Khoảng cách giữa ô input và nút */
+                background-color: #f5f5f5;
+                color: #333;
+                cursor: pointer;
+            }
+
+            .search-bar .search-button {
+                position: absolute;
+                right: 0px;
+                border: none;
+                border-radius: 15px;
+                background-color: #e0e0e0;
+                color: #333;
+                font-size: 12px;
+                cursor: pointer;
+                top: 0px;
+                bottom: 0px;
+            }
+
+            .search-bar button:hover {
+                background-color: #e0e0e0;
+            }
+
+        .navbar-icons .fas, .navbar-icons .far {
             margin-left: 15px;
             color: #333; /* Biểu tượng màu đen để tương phản */
             font-size: 20px;
@@ -67,7 +106,7 @@
             color: #333; /* Màu giống biểu tượng */
         }
 
-            .navbar-icons a:hover .fas {
+            .navbar-icons a:hover .fas, .navbar-icons a:hover .far {
                 color: #000; /* Đậm hơn khi hover */
             }
 
@@ -83,7 +122,6 @@
             display: flex;
             justify-content: space-around;
             padding: 0 20px; /* Giữ padding để nội dung không sát mép */
-            /* Xóa max-width và margin để full bề ngang */
         }
 
             .footer-content div {
@@ -140,12 +178,17 @@
                 <!-- Thanh tìm kiếm và biểu tượng -->
                 <div class="d-flex align-items-center">
                     <div class="search-bar">
-                        <input type="text" placeholder="Tìm kiếm sản phẩm..." />
                         <i class="fas fa-search"></i>
+                        <input type="text" placeholder="" />
+                        <button class="search-button">Tìm kiếm</button>
                     </div>
                     <div class="navbar-icons">
                         <!-- Biểu tượng tài khoản với liên kết đến trang đăng nhập -->
                         @Html.ActionLink(" ", "Login", "Auth", new { area = "" }, new { @class = "fas fa-user" })
+                        <!-- Biểu tượng cửa hàng -->
+                        <i class="fas fa-store"></i>
+                        <!-- Biểu tượng yêu thích (wishlist) -->
+                        <i class="far fa-heart"></i>
                         <!-- Biểu tượng giỏ hàng -->
                         <i class="fas fa-shopping-cart"></i>
                     </div>
@@ -153,11 +196,10 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
+    <div class="container">
         @RenderBody()
         <hr />
         <!-- Footer -->
-
     </div>
     <footer>
         <div class="footer-content">

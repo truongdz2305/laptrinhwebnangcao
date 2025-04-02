@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|c:\\users\\admin\\source\\repos\\shopquanao\\shopquanao\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|c:\\users\\admin\\source\\repos\\shopquanao\\shopquanao\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|c:\\users\\admin\\source\\repos\\shopquanao\\shopquanao\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\auth\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|c:\\users\\admin\\source\\repos\\shopquanao\\shopquanao\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|solutionrelative:shopquanao\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC41801A-ABFD-44D8-A2CE-DEC36EE7DB66}|shopquanao\\shopquanao.csproj|C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Auth\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "shopquanao\\Views\\Auth\\ResetPassword.cshtml",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "shopquanao\\Views\\Home\\Index.cshtml",
@@ -133,7 +133,7 @@
               "RelativeDocumentMoniker": "shopquanao\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Controllers\\AuthController.cs",
               "RelativeToolTip": "shopquanao\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAowB8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T03:17:09.125Z",
               "EditorCaption": ""
@@ -152,19 +152,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "shopquanao\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "shopquanao\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAADwv9IAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T09:42:53.049Z"
+              "WhenOpened": "2025-03-31T09:42:53.049Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Auth\\Register.cshtml",
               "RelativeDocumentMoniker": "shopquanao\\Views\\Auth\\Register.cshtml",
@@ -177,20 +178,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Auth\\Login.cshtml",
               "RelativeDocumentMoniker": "shopquanao\\Views\\Auth\\Login.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Views\\Auth\\Login.cshtml",
               "RelativeToolTip": "shopquanao\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-01T17:17:21.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "shopquanao\\Controllers\\HomeController.cs",
@@ -202,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Model1.edmx.diagram",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Models\\Model1.edmx.diagram",
               "RelativeDocumentMoniker": "shopquanao\\Models\\Model1.edmx.diagram",
@@ -214,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Model1.Context.tt",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Models\\Model1.Context.tt",
               "RelativeDocumentMoniker": "shopquanao\\Models\\Model1.Context.tt",
@@ -274,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\shopquanao\\shopquanao\\Web.config",
               "RelativeDocumentMoniker": "shopquanao\\Web.config",

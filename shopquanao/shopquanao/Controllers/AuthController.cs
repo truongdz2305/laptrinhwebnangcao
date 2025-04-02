@@ -31,12 +31,12 @@ namespace shopquanao.Controllers
             var user = _context.Users.SingleOrDefault(u => u.username == username);
             if (user != null && BCrypt.Net.BCrypt.Verify(password, user.password))
             {
-                Session["User"] = user.username;
-                TempData["Success"] = "Bạn đã đăng nhập thành công.";
-                return RedirectToAction("Index", "Home");
+                Session["Username"] = user.username; // Adjusted to store "Username" like the first snippet
+                TempData["Success"] = "Đăng nhập thành công!"; // Consistent success message
+                return RedirectToAction("Index", "Home"); // Redirect to Home, not self-referencing
             }
 
-            ViewBag.Error = "Sai tài khoản hoặc mật khẩu.";
+            ViewBag.Error = "Tên truy cập hoặc mật khẩu không đúng."; // Consistent error message
             return View();
         }
 
@@ -94,8 +94,8 @@ namespace shopquanao.Controllers
         // GET: Auth/Logout
         public ActionResult Logout()
         {
-            Session.Clear();
-            return RedirectToAction("Login");
+            Session.Clear(); // Clear session as in both snippets
+            return RedirectToAction("Login", "Auth"); // Explicitly redirect to Login in Auth controller
         }
 
         // GET: Auth/ResetPassword
